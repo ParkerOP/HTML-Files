@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="formsResults.html">
+        <h2>Personal Information</h2>
+        <input type="text" placeholder="Your Name" required minlength="4" maxlength="20" size="18">
+        <br>
+        <div>
+            <h3>Select your Section</h3>
+            <label for="sectiona">
+                <input type="radio" name="section" id="sectiona">Section A
+            </label>
+            <label for="sectionb">
+                <input type="radio" name="section" id="sectionb">Section B
+            </label>
+            <label for="sectionc">
+                <input type="radio" name="section" id="sectionc">Section C
+            </label>
+            <label for="sectiond">
+                <input type="radio" name="section" id="sectiond">Section D
+            </label>
+            <label for="sectione">
+                <input type="radio" name="section" id="sectione">Section E
+            </label>
+        </div>
+        <br>
+        <div>
+            <select name="house" id="house">
+                <option value="no-house">Select your house</option>
+                <option value="shivaji">Shivaji</option>
+                <option value="tagore">Tagore</option>
+                <option value="ashoka">Ashoka</option>
+                <option value="raman">Raman</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="email" placeholder="Enter your email" required minlength="12" size="20">
+            <br>
+            <br>
+            <input type="password" placeholder="Enter your password" required minlength="6" size="16">
+            <br>
+            <br>
+            <input type="tel" name="telephone" id="telephone" placeholder="Your mobile number" required minlength="10"
+                maxlength="12" size="14">
+        </div>
+
+        <div>
+            <h3>Do you meet our criteria?</h3>
+            <label for="affirmative">
+                <input type="checkbox" name="information" id="affirmative">Yes
+            </label>
+            <label for="negative">
+                <input type="checkbox" name="information" id="negative">No
+            </label>
+        </div>
+        <br>
+        <div>
+            <textarea name="explain" id="explain" cols="35" rows="8"
+                placeholder="Explain why do you want to join (Optional)"></textarea>
+        </div>
+        <br>
+        <div>
+            <p>Choose an image:</p>
+            <input type="file" name="file" id="file" accept="image/*">
+        </div>
+        <br>
+        <input type="reset" value="Reset the form">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
